@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table tr td {
+    width: calc(100vw/60);
+    height: calc(100vh/40);
+    background-color: white;
+    border: solid 1px rgb(99, 99, 231);
+    border-radius: 0.2rem;
+    margin: 2px;
+}
+body{
+    display: flex;
+    background-color:#f5f4f4;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+    color: rgb(46, 11, 143);
+    font-size: 3rem;
+    font-family:inherit;
+    text-align: center;
+    background-color: rgb(106, 181, 216);;
+    border-bottom: black solid 2px;
+}
+.box{
+    display: flex;
+}
+.button{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.button .btn{
+    width: 20%;
+    height: 50%;
+    color: black;
+    font-family:unset;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem 3rem;
+}
+.box ul{
+    list-style-type: none;
+    margin-top: 1.5rem;
+    margin-right: 10rem;
+}
+.button .btn:hover{
+    opacity: 0.8;
+    color: white;
+    background-color: black;
+}
+.box ul li{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.Notification{
+    font-size: 2rem;
+    text-align: center;
+    font-family:inherit;
+    color: black;
+}
+.table{
+    flex: 10;
+    margin: 1rem 1rem;
+    border: solid 2px rgba(9, 38, 43, 0.75);
+
+}
+footer{
+    flex: 1;
+    display: flex;
+    background-color: rgb(106, 181, 216);
+    border-top: solid black 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+footer a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visited {
+    border: 1px solid rgb(175, 216, 248);
+    animation-name: colorChange;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes colorChange {
+    0% {
+        transform: scale(.3);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+    }
+    100% {
+        transform: scale(1.0);
+        background-color: rgba(0, 190, 218, 0.75);
+    }
+}
+
+.wall{
+    background-color: rgba(0, 0, 0, 0.623);
+    text-align: center;
+}
+
+.shortest{
+    background-color: rgb(177, 15, 136) !important;
+    text-align: center;
+}
+
+.startPoint{
+    background-color: rgb(109, 233, 109);
+    text-align: center;
+}
+
+.endPoint{
+    background-color: rgb(10, 147, 238);
+    text-align: center;
+}
