@@ -37,8 +37,8 @@ header{
     margin-left: 2rem;
 }
 .button .btn{
-    width: 20%;
-    height: 50%;
+    width: 15%;
+    height: 30%;
     color: black;
     font-family:unset;
     font-size: 1.5rem;
@@ -47,7 +47,7 @@ header{
 }
 .box ul{
     list-style-type: none;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-right: 10rem;
 }
 .button .btn:hover{
@@ -56,7 +56,7 @@ header{
     background-color: black;
 }
 .box ul li{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1rem 0;
 }
 .Notification{
