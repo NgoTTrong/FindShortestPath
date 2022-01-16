@@ -283,8 +283,8 @@ function reset(){
                 board[i].children[j].classList.remove('visited');
             }
         }
-
     }
+    notification.innerHTML = '';
 }
 buttonStart.addEventListener('click',async (e)=>{
     buttonReset.disabled = true;
