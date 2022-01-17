@@ -288,10 +288,12 @@ function reset(){
 }
 buttonStart.addEventListener('click',async (e)=>{
     buttonReset.disabled = true;
+    buttonStart.disabled = true;
     await start();
     await sleep(14000);
     buttonReset.disabled = false;
 })
 buttonReset.addEventListener('click',async(e)=>{
+    buttonStart.disabled = false;
     await reset();
 })
